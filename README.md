@@ -1,1 +1,1 @@
-# rainbowas
+# RainbowBot
