@@ -44,13 +44,13 @@ client.on("message", message => {
     };
 });
 client.on("message", message => {
-  if (message.content === "r#help") {
+  if (message.content === "#help") {
       message.react('🌈')
 message.author.send(`**
-r#set 
+#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
-r#inv 
+#inv 
 - لدعوة البوت
 - To Invite the bot
 
@@ -65,7 +65,7 @@ The steps of the role did not worked .!!
 **`)
   }})
    client.on('message', message => {
-	   if(message.content.startsWith(`r#inv`)){
+	   if(message.content.startsWith(`#inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
                  message.react('🌈')
 		   var embed = new Discord.RichEmbed()
